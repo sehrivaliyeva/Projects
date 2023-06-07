@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ana səhifə</title>
+</head>
+<body style="background-color: lightgreen;">
+
+ <h1>Ana səhifə buradır</h1>
+ <hr>
+ <h1 style="color: blue;"> Giriş edən user : <span th:text="${loggedInUsername}"></span> </h1>
+ <hr>
+ 
+
+ <a th:href="@{/books}">Kitablar</a>
+ <hr>
+ <a href="/students">Tələbələr</a>
+  <hr>
+  
+   <a href="/users/all">Userlər</a>
+  <hr>
+ <a href="/logout">Təhlükəsiz çıxış</a>
+
+</body>
+</html>
